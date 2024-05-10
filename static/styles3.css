@@ -1,0 +1,142 @@
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h1, nav ul, nav a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-top {
+  background-color: #70ad47; /* Green background */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.header-top img {
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+.header-top h1 {
+  display: inline;
+  color: white;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.navigation {
+  background-color: #2d3528; /* Black background for navigation */
+  padding: 10px 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and text styling */
+body, h1, nav ul, nav a {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* Content styling */
+.blog-section {
+  max-width: 800px; /* Restrict the width for better readability */
+  margin: 20px auto; /* Center the blog section */
+  padding: 20px;
+  background: #fff; /* White background for content */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee; /* Separator between posts */
+  padding-bottom: 20px; /* Spacing after each post */
+}
+
+.blog-post:last-child {
+  border-bottom: none; /* No border for the last post */
+}
+
+.blog-post h3 {
+  color: #76c043; /* Dark green color for titles */
+  font-size: 1.5em; /* Larger font size for titles */
+}
+
+.blog-post img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Keep aspect ratio */
+  margin-top: 10px; /* Space between text and image */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Improved paragraph styling */
+.blog-post p {
+  font-size: 1em;
+  line-height: 1.6; /* Improved line height for readability */
+  color: #666; /* Lighter text color for paragraph */
+  margin-top: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2d3528; /* Consistent with navigation bar */
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+.footer-content {
+  max-width: 800px; /* Match the blog section width */
+  margin: auto;
+}
+
+.footer-section {
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+}
+
+/* Additional responsive design for better presentation on smaller screens */
+@media (max-width: 768px) {
+  .blog-section {
+    width: 90%; /* More width on smaller screens */
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center alignment */
+  }
+
+  .navigation li {
+    margin-bottom: 10px; /* Space between navigation items */
+  }
+}
+

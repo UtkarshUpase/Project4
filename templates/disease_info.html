@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeafLens - Plant Diseases</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+  <div class="header-top">
+    <img src="{{ url_for('static', filename='plant-disease-5515569-4600144.webp') }}" alt="LeafLens Logo">
+    <h1>LeafLens</h1>
+  </div>
+  <nav class="navigation">
+    <ul>
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('upload_file') }}">Upload Image</a></li>
+      <li><a href="{{ url_for('disease_info') }}">Disease Information</a></li>
+      <li><span style="color: rgb(255, 255, 255); cursor: not-allowed;">Login/Signup</span></li>
+    </ul>
+  </nav>
+  
+
+  <section class="blog-section">
+    <h2>Know your plants - Plant Diseases Information</h2>
+
+    <article class="blog-post">
+      <h3>Disease 1: Powdery Mildew</h3>
+      <img src="static/mango_powdery_mildew.jpg" alt="Disease 1 Image">
+      <p> <strong></strong>  Symptoms: White powdery substance on leaves, stems, and flowers.<br><br>
+        Precautions:<br>
+        -Ensure proper air circulation by spacing plants appropriately.<br>
+        -Avoid overhead watering, as moisture on leaves can promote the growth of powdery mildew.<br>
+        -Apply fungicides early in the season as a preventive measure.<br><br>
+        Cure:<br>
+        -Remove and destroy affected plant parts.<br>
+        -Apply fungicides containing sulfur or neem oil.<br>
+        -Prune plants to improve air circulation.</p>
+    </article>
+
+    <article class="blog-post">
+      <h3>Disease 2: Late Blight</h3>
+      <img src="static/Late_blight_on_potato_leaf_2.jpg" alt="Disease 2 Image">
+      <p> <strong>Symptoms:</strong>  Dark spots on leaves, wilting, and rapid deterioration of plant health.<br><br>
+       <strong>Precautions:</strong> <br>
+        -Use disease-resistant plant varieties.<br>
+        -Water plants at the base to avoid wetting foliage.<br>
+        -Apply copper-based fungicides preventively.<br><br>
+       <strong>Cure:</strong> <br>
+        -Remove and destroy infected plant material.<br>
+        -Apply fungicides containing copper or chlorothalonil.<br>
+        -Rotate crops to prevent the buildup of pathogens in the soil.</p>
+    </article>
+
+    <article class="blog-post">
+      <h3>Diease 3: Apple Cedar Rust</h3>
+      <img src="static/uploads/AppleCedarRust2.JPG" alt="Cherry Powdery Mildew">
+      <p>
+        <strong>Symptoms:</strong> Early symptoms on apple trees include yellow spots on the upper surfaces of the leaves.
+        As the disease progresses, these spots enlarge and bright orange-yellow lesions form on the undersides of the leaves.<br>
+        <strong>Precautions:</strong><br> -Plant resistant apple varieties if cedar-apple rust is common in your area. <br>
+        -Avoid planting Eastern red cedars near apple trees to prevent cross-infection. <br>
+        -Regularly inspect trees for the presence of galls on cedars or leaf lesions on apples, especially in the spring.<br>
+        <strong>Cure:</strong> <br> -Apply fungicides labeled for use against cedar-apple rust during the spring, following the product label's instructions for timing and application rates. <br>
+        -Prune and dispose of any affected parts of the apple tree to reduce the amount of fungal spores that could spread the disease. <br>
+      </p>
+    </article>
+
+    <article class="blog-post">
+      <h3>Disease 4: Corn Common Rust</h3>
+      <img src="static\uploads\CornCommonRust3.JPG" alt="Cercospora Leaf Spot">
+      <p>
+        <strong>Symptoms:</strong>Early symptoms include light yellow spots on the upper surfaces of leaves. <br>
+        <strong>Precautions:</strong> <br> -Plant rust-resistant corn varieties if common rust is a known issue in the area. <br>
+        -Crop rotation can help reduce the fungal spores in the soil. <br>
+        -Avoid planting corn after corn, as this can encourage the survival and buildup of rust spores.<br>
+        <strong>Cure:</strong> <br> -Fungicides can be effective, particularly if applied when rust first appears and before it becomes severe. <br>
+        -If rust appears late in the season or after the silking stage, fungicide application may not be economical.
+      </p>
+    </article>
+
+    <article class="blog-post">
+      <h3>Disease 5: Tomato Yellow Curl Virus</h3>
+      <img src="static/uploads/TomatoYellowCurlVirus3.JPG" alt="Cercospora Leaf Spot">
+      <p>
+        <strong>Symptoms:</strong>Leaves of infected plants show a characteristic yellowing and curling. <br>
+        <strong>Precautions:</strong> <br> -Use virus-free seeds and transplants. <br>
+        -Implement strict vector control, as the virus is most commonly spread by whiteflies. <br>
+        -Use insect netting or reflective mulches to prevent whiteflies from reaching the plants.<br>
+        <strong>Cure:</strong> <br> -There is no cure once plants are infected with TYLCV. <br>
+        -Manage whiteflies with insecticides or biological controls, following the label instructions carefully. <br>
+        -Crop rotation and field sanitation can help reduce the likelihood of future infections. <br>
+      </p>
+    </article>
+    <article class="blog-post">
+      <h3>Disease 6: Apple scab</h3>
+      <img src="static\uploads\AppleScab1.JPG" alt="Apple Apple scab">
+      <p>
+          <strong>Symptoms:</strong> Fungal spots on leaves and fruit, leading to defoliation and reduced fruit quality.<br>
+          <strong>Cause:</strong> The fungus (Venturia inaequalis) overwinters in fallen leaves and infects new growth in spring.<br>
+          <strong>Cure:</strong> Use fungicides like captan or mancozeb, plant resistant apple varieties like 'Liberty' or 'Freedom', and practice good sanitation by removing fallen leaves.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 7: Apple Black rot</h3>
+      <img src="static\uploads\Apple_Black_rot.JPG"alt="Apple Black rot">
+      <p>
+          <strong>Symptoms:</strong> Circular brown lesions on fruit and leaves, leading to mummification.<br>
+          <strong>Cause:</strong> The fungus (Botryosphaeria obtusa) infects through wounds or natural openings.<br>
+          <strong>Cure:</strong> Apply fungicides like thiophanate-methyl or pyraclostrobin, remove and destroy infected fruit, and prune branches.
+      </p>
+  </article>
+  
+  
+  
+  <article class="blog-post">
+      <h3>Disease 8: Cherry Powdery mildew</h3>
+      <img src="static/uploads/Cherry_Powdery_mildew.JPG" alt="Cherry Powdery mildew">
+      <p>
+          <strong>Symptoms:</strong> White powdery growth on leaves, affecting cherry trees.<br>
+          <strong>Cause:</strong> Fungus (Podosphaera clandestina) thrives in humid conditions.<br>
+          <strong>Cure:</strong> Use fungicides like sulfur or potassium bicarbonate, and ensure proper tree spacing for air circulation.
+      </p>
+  </article>
+  
+  
+  
+  <article class="blog-post">
+      <h3>Disease 9: Corn Cercospora leaf spot & Gray leaf spot</h3>
+      <img src="static/uploads/corn_Cercospora.JPG" alt="Corn Cercospora leaf spot & Gray leaf spot">
+      <p>
+          <strong>Symptoms:</strong> Brownish lesions on leaves, affecting corn yield.<br>
+          <strong>Cause:</strong> Fungi (Cercospora spp. & Cercospora zeae-maydis) infect corn leaves during warm, humid conditions.<br>
+          <strong>Cure:</strong> Apply fungicides like azoxystrobin or pyraclostrobin before symptoms appear. Implementing a crop rotation with non-host crops can help reduce disease pressure.
+      </p>
+  </article>
+  
+ 
+  
+  <article class="blog-post">
+      <h3>Disease 10: Corn Northern Leaf Blight</h3>
+      <img src="static/uploads/Corn_northern_leaf_blight.JPG" alt="Corn Northern Leaf Blight">
+      <p>
+          <strong>Symptoms:</strong> Cigar-shaped lesions on leaves, reducing yield.<br>
+          <strong>Cause:</strong> Fungus (Exserohilum turcicum) thrives in cool, humid conditions.<br>
+          <strong>Cure:</strong> Apply fungicides like azoxystrobin or propiconazole. Plant resistant corn varieties and practice crop rotation.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 11: Grape Black rot</h3>
+      <img src="static/uploads/Grape_Black_rot.JPG" alt="Grape Black rot">
+      <p>
+          <strong>Symptoms:</strong> Brown lesions on leaves and fruit, leading to fruit decay.<br>
+          <strong>Cause:</strong> Fungus (Guignardia bidwellii) infects grapes during wet weather.<br>
+          <strong>Cure:</strong> Apply fungicides like mancozeb or thiophanate-methyl. Prune vines for better air circulation.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 12: Grape Esca (Black Measles)</h3>
+      <img src="static/uploads/grape_esca.JPG" alt="Grape Esca (Black Measles)">
+      <p>
+          <strong>Symptoms:</strong> Vine decline, black streaks in the wood.<br>
+          <strong>Cause:</strong> Combination of fungi and bacteria (Phaeomoniella chlamydospora, etc.).<br>
+          <strong>Cure:</strong> Apply fungicides like propiconazole or tebuconazole during pruning cuts and before bud break. Pruning during dry periods and using pruning paste can help prevent infection.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 13: Grape Leaf blight</h3>
+      <img src="static/uploads/grape_leaf_blight.JPG" alt="Grape Leaf blight">
+      <p>
+          <strong>Symptoms:</strong> Brown spots on leaves, affecting grapevines.<br>
+          <strong>Cause:</strong> Fungus (Isariopsis spp.) infects grape leaves during warm, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like azoxystrobin or pyraclostrobin. Prune vines and remove infected leaves.
+      </p>
+  </article>
+  
+  <!-- <article class="blog-post">
+      <h3>Disease 14: Orange Haunglongbing (Citrus greening)</h3>
+      <img src="static/uploads/OrangeHaunglongbing.JPG" alt="Orange Haunglongbing (Citrus greening)">
+      <p>
+          <strong>Symptoms:</strong> Yellow shoots, misshapen fruit, tree decline.<br>
+          <strong>Cause:</strong> Bacterium (Candidatus Liberibacter spp.) spread by citrus psyllids.<br>
+          <strong>Cure:</strong> No cure available. Control psyllids with insecticides, remove infected trees, and plant resistant varieties if available.
+      </p>
+  </article> -->
+  
+  <article class="blog-post">
+      <h3>Disease 14: Peach Bacterial spot</h3>
+      <img src="static/uploads/peach_bacterial_spot.JPG" alt="Peach Bacterial spot">
+      <p>
+          <strong>Symptoms:</strong> Dark spots on leaves and fruit, cankers on twigs.<br>
+          <strong>Cause:</strong> Bacteria (Xanthomonas arboricola pv. pruni) infects through wounds or natural openings.<br>
+          <strong>Cure:</strong> Use copper-based fungicides or streptomycin. Plant resistant peach varieties and prune to improve air circulation.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 15: Pepper, bell Bacterial spot</h3>
+      <img src="static/uploads/paperBell_bacterial_spot.JPG" alt="Pepper, bell Bacterial spot">
+      <p>
+          <strong>Symptoms:</strong> Dark lesions on leaves and fruit, affecting bell peppers.<br>
+          <strong>Cause:</strong> Bacteria (Xanthomonas spp.) infects pepper plants through wounds or natural openings.<br>
+          <strong>Cure:</strong> Apply copper-based fungicides or streptomycin, plant resistant pepper varieties.
+      </p>
+  </article>
+  
+  <!-- <article class="blog-post">
+      <h3>Disease 17: Pepper, bell healthy</h3>
+      <img src="static/uploads/PepperBellHealthy.JPG" alt="Pepper, bell healthy">
+      <p>
+          <strong>Symptoms:</strong> N/A<br>
+          <strong>Cause:</strong> N/A<br>
+          <strong>Cure:</strong> Implement good agricultural practices, maintain proper irrigation and nutrition.
+      </p>
+  </article> -->
+  
+  <article class="blog-post">
+      <h3>Disease 16: Potato Early blight</h3>
+      <img src="static/uploads/potato_early_blight.JPG" alt="Potato Early blight">
+      <p>
+          <strong>Symptoms:</strong> Dark spots on leaves, leading to defoliation.<br>
+          <strong>Cause:</strong> Fungus (Alternaria solani) survives in plant debris and soil.<br>
+          <strong>Cure:</strong> Apply fungicides like chlorothalonil or mancozeb. Rotate crops with non-host plants, remove infected plant debris.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 17: Potato Late blight</h3>
+      <img src="static/uploads/potato_late_blight.JPG" alt="Potato Late blight">
+      <p>
+          <strong>Symptoms:</strong> Dark lesions on leaves, leading to rapid foliage collapse.<br>
+          <strong>Cause:</strong> Fungus (Phytophthora infestans) thrives in cool, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like mefenoxam or mancozeb, plant resistant potato varieties like 'Kennebec' or 'Russet Burbank'.
+      </p>
+  </article>
+  
+  <!-- <article class="blog-post">
+      <h3>Disease 20: Squash Powdery mildew</h3>
+      <img src="static/uploads/SquashPowderyMildew.JPG" alt="Squash Powdery mildew">
+      <p>
+          <strong>Symptoms:</strong> White powdery spots on leaves, affecting squash plants.<br>
+          <strong>Cause:</strong> Fungus (Podosphaera xanthii) thrives in warm, dry conditions.<br>
+          <strong>Cure:</strong> Use fungicides like sulfur or potassium bicarbonate, plant resistant squash varieties, and ensure proper spacing.
+      </p>
+  </article> -->
+  
+  <!-- <article class="blog-post">
+      <h3>Disease 21: Strawberry Leaf scorch</h3>
+      <img src="static/uploads/StrawberryLeafScorch.JPG" alt="Strawberry Leaf scorch">
+      <p>
+          <strong>Symptoms:</strong> Brown spots on leaves, affecting strawberry plants.<br>
+          <strong>Cause:</strong> Fungus (Diplocarpon earlianum) infects during warm, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like chlorothalonil or mancozeb, plant resistant strawberry varieties and remove infected leaves.
+      </p>
+  </article> -->
+  
+  <article class="blog-post">
+      <h3>Disease 18: Tomato Bacterial spot</h3>
+      <img src="static/uploads/tomato_bacterial_spot.JPG" alt="Tomato Bacterial spot">
+      <p>
+          <strong>Symptoms:</strong> Dark lesions with yellow halos on leaves and fruit.<br>
+          <strong>Cause:</strong> Bacteria (Xanthomonas campestris pv. vesicatoria) thrives in warm, humid conditions.<br>
+          <strong>Cure:</strong> Apply copper-based fungicides or streptomycin, plant resistant tomato varieties.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 19: Tomato Early blight</h3>
+      <img src="static/uploads/tomato_early_blight.JPG" alt="Tomato Early blight">
+      <p>
+          <strong>Symptoms:</strong> Brown spots on lower leaves, affecting tomato plants.<br>
+          <strong>Cause:</strong> Fungus (Alternaria solani) survives in plant debris and soil.<br>
+          <strong>Cure:</strong> Apply fungicides like chlorothalonil or mancozeb. Rotate crops with non-host plants, remove infected plant debris.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 20: Tomato Late blight</h3>
+      <img src="static/uploads/tomato_late_blight.JPG" alt="Tomato Late blight">
+      <p>
+          <strong>Symptoms:</strong> Dark lesions on leaves, leading to rapid foliage collapse.<br>
+          <strong>Cause:</strong> Fungus (Phytophthora infestans) thrives in cool, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like mefenoxam or mancozeb, plant resistant tomato varieties like 'Mountain Merit' or 'Defiant'.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 21: Tomato Leaf Mold</h3>
+      <img src="static/uploads/tomato_leaf_mold.JPG" alt="Tomato Leaf Mold">
+      <p>
+          <strong>Symptoms:</strong> Yellow patches on upper leaves with a velvety texture underneath.<br>
+          <strong>Cause:</strong> Fungus (Fulvia fulva) thrives in warm, humid conditions.<br>
+          <strong>Cure:</strong> Use fungicides like chlorothalonil or mancozeb, ensure good ventilation and spacing between plants.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 22: Tomato Septoria leaf spot</h3>
+      <img src="static/uploads/tomato_septoria_leaf_spot.JPG" alt="Tomato Septoria leaf spot">
+      <p>
+          <strong>Symptoms:</strong> Dark spots with light centers on lower leaves.<br>
+          <strong>Cause:</strong> Fungus (Septoria lycopersici) infects during warm, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like chlorothalonil or mancozeb, remove infected leaves, practice crop rotation.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 23: Tomato Spider mites</h3>
+      <img src="static/uploads/tomato_spider_mites.JPG" alt="Tomato Spider mites">
+      <p>
+          <strong>Symptoms:</strong> Stippling on leaves due to mite feeding.<br>
+          <strong>Cause:</strong> Mites (Tetranychus spp.) thrive in hot, dry conditions.<br>
+          <strong>Cure:</strong> Use insecticidal soaps or neem oil, introduce predatory mites like Phytoseiulus persimilis, maintain high humidity levels.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 24: Tomato Target Spot</h3>
+      <img src="static/uploads/tomato_target_spot.JPG" alt="Tomato Target Spot">
+      <p>
+          <strong>Symptoms:</strong> Target-like spots on leaves.<br>
+          <strong>Cause:</strong> Fungus (Corynespora cassiicola) infects during warm, wet conditions.<br>
+          <strong>Cure:</strong> Use fungicides like chlorothalonil or mancozeb, remove infected leaves, ensure good air circulation.
+      </p>
+  </article>
+  
+  <article class="blog-post">
+      <h3>Disease 25: Tomato Tomato mosaic virus</h3>
+      <img src="static/uploads/tomato_mosaic_virus.JPG" alt="Tomato Tomato mosaic virus">
+      <p>
+          <strong>Symptoms:</strong> Mottling, distortion, stunted growth.<br>
+          <strong>Cause:</strong> Virus (ToMV) transmitted through contaminated tools, hands, or sap.<br>
+          <strong>Cure:</strong> No cure available. Use virus-free seed, avoid touching plants when wet, disinfect tools between plants, plant resistant tomato varieties like 'Mountain Fresh Plus' or 'Big Beef'.
+      </p>
+  </article>
+  
+    
+    
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are focused towards the goal of empowering plant enthusiasts and farmers alike, our cutting-edge app harnesses the power of Machine Learning to revolutionize plant care. Seamlessly diagnosing diseases, it stands as a reliable guide, fostering healthier crops and nurturing a greener and better tomorrow.</p>
+      </div>
+      <div class="footer-section">
+        <h3>All Rights Reserved &copy; 2024 LeafLens</h3>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

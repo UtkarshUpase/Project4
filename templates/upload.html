@@ -1,0 +1,186 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plant Disease Detector</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('{{ url_for('static', filename='pawel-czerwinski-qzaIDFtzcZ0-unsplash.jpg') }}') no-repeat center center fixed; 
+      background-size: cover;
+    }
+    .container {
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.453);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .upload-btn-wrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+    .btn-primary {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Upload Leaf Image</h1>
+  <p>Share a picture of the plant and get immediate results!</p>
+  <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+    <div class="upload-btn-wrapper">
+      <button class="btn">Upload Image</button>
+      <input type="file" name="my_image">
+    </div>
+    <br>
+    <input type="submit" value="Analyze" class="btn btn-primary">
+  </form>
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plant Disease Detector</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .container {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.445);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 0;
+      /* opacity: 65 %; */
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .btn {
+      border: 2px solid gray;
+      color: gray;
+      background-color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .upload-btn-wrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+    .btn-primary {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay loop muted>
+  <source src="{{ url_for('static', filename='grapeleaf.mp4') }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="container">
+  <h1>Upload Leaf Image</h1>
+  <p>Share a picture of the plant and get immediate results!</p>
+  <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+    <div class="upload-btn-wrapper">
+      <button class="btn">Upload Image</button>
+      <input type="file" name="my_image">
+    </div>
+    <br>
+    <input type="submit" value="Analyze" class="btn btn-primary">
+  </form>
+</div>
+
+</body>
+</html>
+
+

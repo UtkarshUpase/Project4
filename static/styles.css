@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Corrected to a more suitable background color */
+  color: #000000;
+}
+
+header {
+  background-color: #70ad47;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 60px;
+  /* margin-right: 10px; */
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+  /* margin-left: 10px; */
+}
+
+nav {
+  background-color: #2d3528;
+  padding: 10px 0; /* Uniform padding across top and bottom */
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none; /* Ensures no bullets are shown */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px; /* Increased space between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero img {
+  width: 100%; /* Ensures the hero image is fully responsive */
+  height: 800px;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+
+.quote {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(12, 29, 48);
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Ensuring readability */
+  background-color: rgba(255, 255, 255, 0.207); /* Adding background color for text contrast */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.services {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: x-large;
+  /* background-color: #70ad47; */
+}
+
+.service-card {
+  background-color: #9aaa24;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 5px;
+  display: inline-block;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+
+.service-card video {
+  width: 100%; /* Set width to 100% of the container */
+  height: 100%; /* Set height to 100% of the container */
+  border-radius: 5px;
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+.service-card a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #3f731c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
